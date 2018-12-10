@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Vibrating Rocket</title>
+  <style>
+    h1 {
+      font-size: 25vh;
+      text-align: center;
+      padding-top: 15vh;
+    	animation: annoyingVibration 30  0ms linear infinite;
+    }
+    @keyframes annoyingVibration {
+      0% {
+        transform: translate(0);
+      }
+      20% {
+        transform: translate(-2px, 2px);
+      }
+      40% {
+        transform: translate(-2px, -2px);
+      }
+      60% {
+        transform: translate(2px, 2px);
+      }
+      80% {
+        transform: translate(2px, -2px);
+      }
+      100% {
+        transform: translate(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀</h1>
+</body>
+</html>
