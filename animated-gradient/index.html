@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Animated Gradient</title>
+  <style>
+    body {
+      background: linear-gradient(90deg, #daac57, #73f498, #96cde5, #cb96e5);
+      background-size: 600% 600%;
+      animation: AnimationName 35s ease-in-out infinite;
+      text-align: center;
+    }
+    @keyframes AnimationName {
+      0% { background-position: left }
+      50% { background-position: right }
+      100% { background-position: left }
+    }
+    h1 {
+      padding: 40vh 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Use <a href="https://www.gradient-animator.com">gradient generator</a> and have fun ✌️</h1>
+</body>
+</html>
