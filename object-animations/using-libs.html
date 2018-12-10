@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>CSS magic with Animate.css</title>
+  <!-- Документация и скачивание: https://github.com/daneden/animate.css -->
+  <link rel="stylesheet" href="animate.css">
+  <style>
+    .foxy {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      margin: 40px 0;
+    }
+    a {
+      padding: 10px 15px;
+      background-color: #ccc;
+      border-radius: 3px;
+      text-decoration: none;
+      color: black;
+      box-shadow: 3px 3px 0 #333;
+      transition: box-shadow 100ms ease;
+    }
+    a:active {
+      box-shadow: 0px 0px 0 #333;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="animated infinite bounce delay-1s">Заранее анимированный элемент</h1>
+
+  <div class="foxy animated infinite" id="foxy-box"></div>
+
+  <a href="#" onclick="animateFoxyBox()">Анимировать синий прямоугольник</a>
+
+  <script type="text/javascript">
+    function animateFoxyBox() {
+      document.getElementById('foxy-box').classList.toggle('bounce')
+    }
+  </script>
+</body>
+</html>
