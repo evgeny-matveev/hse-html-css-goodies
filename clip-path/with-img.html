@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Clippy</title>
+  <style>
+    img {
+      height: 300px;
+      width: 300px;
+
+      object-fit: cover;
+
+      transition: all 400ms ease;
+
+      -webkit-clip-path: polygon(50% 31%, 81% 8%, 68% 44%, 100% 70%, 61% 68%, 50% 100%, 39% 68%, 0% 70%, 33% 45%, 20% 10%);
+      clip-path: polygon(50% 31%, 81% 8%, 68% 44%, 100% 70%, 61% 68%, 50% 100%, 39% 68%, 0% 70%, 33% 45%, 20% 10%);
+    }
+    img:hover {
+      -webkit-clip-path: polygon(41% 0, 100% 0, 100% 41%, 100% 100%, 76% 100%, 50% 100%, 12% 100%, 0 100%, 0 35%, 0 0);
+      clip-path: polygon(41% 0, 100% 0, 100% 41%, 100% 100%, 76% 100%, 50% 100%, 12% 100%, 0 100%, 0 35%, 0 0);
+    }
+  </style>
+</head>
+<body>
+  <img src="sabrina.jpg" alt="Winking witch">
+  <h1>Use <a href="https://bennettfeely.com/clippy/">dark powers</a> and have fun 👹</h1>
+</body>
+</html>
