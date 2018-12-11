@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Animated background</title>
+  <style>
+    main {
+      height: 50vh;
+      width: 50vw;
+      opacity: 0.5;
+      animation: bgChange 5s linear infinite alternate;
+    }
+    @keyframes bgChange {
+      0% {
+        background: red;
+      }
+      15% {
+        background: orange;
+      }
+      30% {
+        background: yellow;
+      }
+      45% {
+        background: green;
+      }
+      60% {
+        background: blue;
+      }
+      75% {
+        background: indigo;
+      }
+      100% {
+        background: violet;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main></main>
+</body>
+</html>

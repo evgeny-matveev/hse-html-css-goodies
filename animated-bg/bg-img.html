@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Animate background image</title>
+  <style>
+    main {
+      height: 500px;
+      width: 800px;
+      margin: 25vh auto 0;
+      background-image: url(bg-pika.jpg);
+      background-size: cover;
+    	animation: zoom 30s ease-out infinite both;
+    }
+    @keyframes zoom {
+      0% {
+        opacity: 0.4;
+        transform: scale(0.01) translateY(-2300px);
+        transform-origin: bottom;
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(800px);
+        transform-origin: bottom;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main></main>
+</body>
+</html>
