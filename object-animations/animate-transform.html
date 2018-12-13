@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="animate.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .box {
+      margin: 0 auto;
+      width: 400px;
+      height: 400px;
+      margin-top: calc(50vh - 200px);
+      background-color: red;
+      transition: all 5s ease;
+    }
+    .box-animated {
+      width: 200px;
+      height: 200px;
+      background-color: green;
+      border-radius: 50%;
+      tranxsform: translateX(calc(100vw - 200px));
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box" id="box-id"></div>
+
+  <a href="#" onclick="makeMove()">
+    Подвигать
+  </a>
+
+  <script type="text/javascript">
+    function makeMove() {
+      document.getElementById('box-id').classList.toggle('box-animated');
+    }
+  </script>
+
+</body>
+</html>
