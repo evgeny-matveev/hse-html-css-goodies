@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <title></title>
   <style>
+    body {
+      background: linear-gradient(90deg, #daac57, #73f498, #96cde5, #cb96e5);
+      background-size: 600% 600%;
+      animation: gradient 35s ease-in-out infinite;
+    }
     h1 {
       font-size: 140px;
       text-align: center;
@@ -29,6 +34,11 @@
       100% {
         opacity: 1;
       }
+    }
+    @keyframes gradient {
+      0% { background-position: left }
+      50% { background-position: right }
+      100% { background-position: left }
     }
   </style>
 </head>
