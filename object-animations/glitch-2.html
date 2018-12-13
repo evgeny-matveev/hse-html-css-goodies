@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    h1 {
+      font-size: 140px;
+      text-align: center;
+      padding-top: 30vh;
+      animation: glitchWithColor 2.5s linear infinite;
+    }
+    @keyframes glitchWithColor {
+      0% {
+        opacity: 1;
+      }
+      40% {
+        opacity: 1;
+        color: black;
+      }
+      41.1% {
+        color: red;
+        opacity: 0;
+      }
+      49% {
+        color: black;
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Привет!</h1>
+</body>
+</html>
